@@ -1,14 +1,14 @@
 
 ---
 
-# 📁 **Wi-Fi Intrusion Detection & Cyber Attack Monitoring System – README.md**
+#  **Wi-Fi Intrusion Detection & Cyber Attack Monitoring System – README.md**
 
 ```md
-# 🔐 Wi-Fi Intrusion Detection & Cyber Attack Monitoring System
+#  Wi-Fi Intrusion Detection & Cyber Attack Monitoring System
 
 A network-based intrusion detection system to monitor devices and detect suspicious cyber activities in real-time.
 
-## 🚀 Features
+##  Features
 - Secure login with brute-force attack detection
 - Honeypot-based bot detection
 - Device fingerprinting (IP, browser, OS, screen resolution)
@@ -19,13 +19,13 @@ A network-based intrusion detection system to monitor devices and detect suspici
 - Automatic IP blocking for high-risk devices
 - Real-time admin dashboard with attack logs and analytics
 
-## 🛠️ Tech Stack
+##  Tech Stack
 - Backend: (mention your tech — e.g., Python / ASP.NET / Java)
 - Database: SQL
 - Frontend: HTML, CSS, JavaScript
 - Concepts: Cybersecurity, Intrusion Detection Systems
 
-## ⚙️ System Workflow
+##  System Workflow
 1. User connects to the system
 2. Device details are collected and stored
 3. Activity is monitored in real-time
@@ -33,14 +33,14 @@ A network-based intrusion detection system to monitor devices and detect suspici
 5. High-risk devices are blocked automatically
 6. Admin dashboard displays all attack data
 
-## 📊 Dashboard Includes
+##  Dashboard Includes
 - Connected devices
 - Suspicious devices
 - Connection logs
 - URL scan logs
 - Attack analytics graph
 
-## 📌 Applications
+##  Applications
 - Network security monitoring
 - Web application firewalls
 - Enterprise cybersecurity systems
