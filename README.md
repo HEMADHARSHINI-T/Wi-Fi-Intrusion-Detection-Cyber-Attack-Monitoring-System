@@ -1,14 +1,8 @@
-
----
-
-#  **Wi-Fi Intrusion Detection & Cyber Attack Monitoring System – README.md**
-
-```md
 #  Wi-Fi Intrusion Detection & Cyber Attack Monitoring System
 
 A network-based intrusion detection system to monitor devices and detect suspicious cyber activities in real-time.
 
-##  Features
+## Features
 - Secure login with brute-force attack detection
 - Honeypot-based bot detection
 - Device fingerprinting (IP, browser, OS, screen resolution)
@@ -33,7 +27,7 @@ A network-based intrusion detection system to monitor devices and detect suspici
 5. High-risk devices are blocked automatically
 6. Admin dashboard displays all attack data
 
-##  Dashboard Includes
+## Dashboard Includes
 - Connected devices
 - Suspicious devices
 - Connection logs
