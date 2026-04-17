@@ -1,0 +1,678 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:Segoe UI, Arial;
+background:#0f172a;
+color:white;
+}
+
+/* ================= DASHBOARD ================= */
+
+.dashboard{
+display:flex;
+height:100vh;
+}
+
+.sidebar{
+width:240px;
+background:#020617;
+color:white;
+padding-top:20px;
+}
+
+.logo{
+text-align:center;
+font-size:22px;
+font-weight:bold;
+margin-bottom:30px;
+color:#38bdf8;
+}
+
+.nav{
+list-style:none;
+}
+
+.nav li{
+margin:5px 0;
+}
+
+.nav a{
+display:block;
+padding:12px 20px;
+color:#cbd5e1;
+text-decoration:none;
+transition:0.3s;
+}
+
+.nav a:hover{
+background:#2563eb;
+color:white;
+border-left:4px solid #38bdf8;
+}
+
+/* MAIN AREA */
+
+.main{
+flex:1;
+display:flex;
+flex-direction:column;
+}
+
+.topbar{
+background:#020617;
+padding:18px;
+box-shadow:0 2px 6px rgba(0,0,0,0.5);
+}
+
+.topbar h2{
+font-size:20px;
+color:#38bdf8;
+}
+
+.content{
+padding:25px;
+overflow:auto;
+}
+
+/* CARD */
+
+.card{
+background:#1e293b;
+padding:20px;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.4);
+margin-bottom:20px;
+}
+
+/* BUTTON */
+
+button,
+input[type=submit]{
+background:#2563eb;
+color:white;
+border:none;
+padding:10px 18px;
+border-radius:6px;
+cursor:pointer;
+}
+
+button:hover,
+input[type=submit]:hover
+
+/* TABLE */
+
+/* TABLE */
+
+table {
+    background: white;
+    border-collapse: collapse;
+}
+
+table th {
+    background: #2f5fd0;
+    color: white;
+    padding: 10px;
+}
+
+table td {
+    color: black;
+    padding: 8px;
+}
+/* INPUTS */
+
+input[type=text],
+input[type=password],
+input[type=file],
+select{
+width:100%;
+padding:10px;
+margin-top:6px;
+margin-bottom:12px;
+border:1px solid #334155;
+border-radius:6px;
+background:#020617;
+color:white;
+}
+
+/* ================= NAVBAR ================= */
+
+.landing-navbar{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 60px;
+background:#020617;
+box-shadow:0 2px 10px rgba(0,0,0,0.5);
+}
+
+.logo{
+font-size:22px;
+font-weight:bold;
+color:#38bdf8;
+}
+
+.menu a{
+margin-left:25px;
+text-decoration:none;
+color:#cbd5e1;
+font-weight:500;
+transition:0.3s;
+}
+
+.menu a:hover
+
+/* ================= HERO SECTION ================= */
+
+.hero-container{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+background:#0f172a;
+gap:50px;   /* add spacing */
+}
+
+.hero-left{
+max-width:520px;
+}
+
+.hero-left h1{
+font-size:42px;
+color:#ffffff;
+margin-bottom:20px;
+}
+
+.hero-left p{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+display:flex;
+gap:15px;
+}
+
+.btn-primary{
+background:#2563eb;
+color:white;
+padding:14px 28px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.btn-secondary{
+border:2px solid #2563eb;
+color:#2563eb;
+padding:12px 26px;
+border-radius:30px;
+text-decoration:none;
+}
+
+.btn-primary:hover
+
+.btn-secondary:hover{
+background:#2563eb;
+color:white;
+}
+
+/* HERO IMAGE */
+
+.hero-right img{
+width:500px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* ================= LOGIN PAGE ================= */
+
+.login-container{
+width:350px;
+margin:120px auto;
+padding:40px;
+background:#1e293b;
+border-radius:12px;
+text-align:center;
+
+/* STRONG BLUE GLOW */
+box-shadow:
+0 0 25px rgba(37,99,235,0.6),
+0 0 50px rgba(37,99,235,0.4),
+0 0 80px rgba(37,99,235,0.3);
+
+}
+
+.login-container h2{
+margin-bottom:25px;
+color:#ffffff;
+}
+
+.login-group{
+margin-bottom:20px;
+text-align:left;
+}
+
+.login-group label{
+display:block;
+margin-bottom:5px;
+color:#cbd5e1;
+}
+
+.login-group input{
+width:100%;
+padding:10px;
+border:none;
+border-bottom:2px solid #334155;
+background:transparent;
+color:white;
+}
+
+.login-btn{
+margin-top:15px;
+width:100%;
+padding:12px;
+background:#2563eb;
+color:white;
+border:none;
+border-radius:4px;
+cursor:pointer;
+}
+
+.login-btn:hover
+
+.login-container a{
+color:#38bdf8;
+text-decoration:none;
+}
+
+.login-container a:hover{
+text-decoration:underline;
+}
+
+.hero-left{
+flex:1;
+}
+
+.hero-right{
+flex:1;
+display:flex;
+justify-content:center;
+}
+
+.hero-right img{
+width:100%;
+max-width:500px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+/* HERO CENTER LAYOUT */
+
+.hero-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+padding:80px 20px;
+background:#0f172a;
+}
+
+/* TEXT CENTER */
+
+.hero-center{
+max-width:700px;
+}
+
+.hero-center h1{
+font-size:42px;
+color:#ffffff;
+margin-bottom:20px;
+}
+
+.hero-center p{
+font-size:18px;
+color:#cbd5e1;
+margin-bottom:30px;
+}
+
+/* BUTTONS CENTER */
+
+.hero-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-bottom:40px;
+}
+
+/* IMAGE CENTER */
+
+.hero-image-center img{
+width:100%;
+max-width:700px;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.6);
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+#login-section{
+scroll-margin-top:120px;
+}
+
+.login-container::before{
+content:"";
+position:absolute;
+top:-30px;
+left:-30px;
+right:-30px;
+bottom:-30px;
+
+background:radial-gradient(circle, rgba(37,99,235,0.6), transparent 70%);
+filter:blur(40px);
+z-index:-1;
+border-radius:20px;
+}
+
+box-shadow:
+0 0 20px rgba(37,99,235,0.5),
+0 0 40px rgba(37,99,235,0.4),
+0 0 80px rgba(37,99,235,0.3);
+
+.system-info{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+
+background:#020617;
+padding:12px 20px;
+
+color:#cbd5e1;
+font-size:14px;
+
+border-bottom:1px solid #1e293b;
+}
+
+.system-info span{
+background:#0f172a;
+padding:6px 12px;
+border-radius:6px;
+box-shadow:0 0 10px rgba(37,99,235,0.2);
+}
+
+.system-info{
+margin-bottom:20px;
+justify-content:center;
+}
+
+.system-info span{
+background:#0f172a;
+padding:8px 16px;
+border-radius:20px;
+border:1px solid #1e40af;
+}
+
+/* ===== SYSTEM INFO FIXED CLEAN LAYOUT ===== */
+
+.system-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+    padding: 0 20px;
+}
+
+.system-info span {
+    background: rgba(37, 99, 235, 0.1);
+    border: 1px solid rgba(37, 99, 235, 0.4);
+    color: #cbd5f1;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    white-space: nowrap;
+
+    /* glow effect */
+    box-shadow: 0 0 8px rgba(37, 99, 235, 0.4);
+}
+
+/* spacing from title */
+.hero-center h1 {
+    margin-top: 10px;
+}
+
+/* prevent overlap on small screens */
+@media (max-width: 768px) {
+    .system-info {
+        gap: 8px;
+    }
+
+    .system-info span {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+}
+
+/* TABLE CONTAINER */
+.content table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+/* HEADER STYLE (THIS FIXES YOUR PROBLEM) */
+.content table th {
+    background: #2f5fd0;   /* blue header */
+    color: white;
+    padding: 10px;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* DATA CELLS */
+.content table td {
+    color: black;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* ROW HOVER (OPTIONAL NICE EFFECT) */
+.content table tr:hover {
+    background: #f5f7ff;
+}
+
+.content {
+    background: #f0f2f5;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content h2 {
+    color: #333;   /* dark gray / black */
+    margin-bottom: 10px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ===== FORM UI FIX (DARK THEME) ===== */
+
+/* Labels / Text */
+label,
+.form-label,
+.login-container label {
+    color: #ffffff !important;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="password"],
+input[type="date"],
+select {
+    width: 300px;              /* smaller width */
+    height: 35px;              /* smaller height */
+    padding: 6px 10px;
+    margin: 8px 0;
+
+    border-radius: 6px;
+    border: 1px solid #444;
+
+    background-color: #0a0f1f; /* dark box */
+    color: #ffffff;            /* text inside */
+
+    font-size: 14px;
+}
+
+/* Dropdown fix */
+select option {
+    color: black;  /* visible when dropdown opens */
+}
+
+/* Placeholder */
+input::placeholder {
+    color: #aaaaaa;
+}
+
+/* Focus effect (nice glow) */
+input:focus,
+select:focus {
+    outline: none;
+    border: 1px solid #4da6ff;
+    box-shadow: 0 0 6px #4da6ff;
+}
+
+/* Container alignment */
+.login-container {
+    max-width: 400px;
+    margin: auto;
+}
+
+/* Spacing for form rows */
+.login-container div {
+    margin-bottom: 10px;
+}
+
+/* Optional: Button styling */
+button,
+input[type="submit"],
+asp\\:Button {
+    background-color: #4da6ff;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background-color: #1a8cff;
+}
+
+
+/* ===== FORCE ALL FORM TEXT TO WHITE ===== */
+
+
+
+/* Specifically for ASP.NET Label controls */
+[id*="Label"] {
+    color: #ffffff !important;
+}
+
+.content table td {
+    color: black !important;
+}
+
+.content table th {
+    color: white !important;
+}
+button:hover,
+input[type=submit]:hover {
+    opacity: 0.9;
+}
+
+
+
+
+/* ===== FORCE FIX FOR UPLOAD LABELS ===== */
+
+.upload-section td {
+    color: #000000 !important;       /* force black */
+    background-color: transparent !important;
+    font-weight: 500;
+}
+
+/* also fix any nested text */
+.upload-section td * {
+    color: #000000 !important;
+} 
+
+/* Main container box */
+.login-container {
+    width: 400px;
+    margin: 80px auto;
+    padding: 30px 35px;
+    background: #1e2a3a;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px rgba(0, 102, 255, 0.5);
+    box-sizing: border-box;
+}
+
+/* Title */
+.login-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #fff;
+}
+
+/* Labels */
+.login-container label {
+    display: block;
+    margin-bottom: 6px;
+    margin-top: 15px;
+    color: #ccc;
+    font-size: 14px;
+}
+
+/* Input fields */
+.login-container input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    background: #0b1622;
+    color: #fff;
+    font-size: 14px;
+    box-sizing: border-box;   /* IMPORTANT FIX */
+}
+
+/* Button */
+.login-container button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background: #2f63d8;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background: #1e4fc1;
+}

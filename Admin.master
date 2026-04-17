@@ -1,0 +1,74 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+
+<meta charset="utf-8"/>
+<title>Admin Dashboard</title>
+
+<link rel="stylesheet" href="style.css"/>
+
+<asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+<!-- ✅ MOVE FORM TO TOP -->
+<form id="Form1" runat="server">
+
+<div class="dashboard">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+
+        <div class="logo">
+            Wi-Fi IDS
+        </div>
+
+        <ul class="nav">
+
+            <li><a href="AdminHome.aspx">Dashboard</a></li>
+            <li><a href="Admin_users_view.aspx">Users</a></li>
+            <li><a href="Admin_upload.aspx">Upload</a></li>
+            <li><a href="Admin_analysis.aspx">Files</a></li>
+            <li><a href="Admin_modify.aspx">Delete</a></li>
+            <li><a href="Admin_result.aspx">DoS Attacks</a></li>
+            <li><a href="Admin_status.aspx">Graph</a></li>
+            <li><a href="AdminAttackLogs.aspx">Attack Logs</a></li>
+            <li><a href="AdminHoneytrapLogs.aspx">Honeytrap Logs</a></li>
+            <li><a href="AdminUnlock.aspx">Unlock Requests</a></li>
+            <li><a href="AdminWifiMonitor.aspx">WiFi Monitor</a></li>
+            <li><a href="Home.aspx">Logout</a></li>
+
+        </ul>
+
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div class="main">
+
+        <!-- TOP BAR -->
+        <div class="topbar">
+            <h2>Admin Panel</h2>
+        </div>
+
+        <!-- PAGE CONTENT -->
+        <div class="content">
+
+            <!-- ✅ KEEP ONLY THIS (NO EXTRA FORM HERE) -->
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+        </div>
+
+    </div>
+
+</div>
+
+</form>
+
+</body>
+</html>

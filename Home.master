@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Home" %>
+
+<!DOCTYPE html>
+
+<html>
+<head id="Head1" runat="server">
+<meta charset="utf-8"/>
+<title>Wi-Fi Intrusion Detection</title>
+
+<link rel="stylesheet" href="style.css"/>
+
+<!-- ✅ GLOBAL SCRIPT (VERY IMPORTANT) -->
+<script>
+    window.addEventListener("load", function () {
+
+        // Use partial ID match (ASP.NET safe)
+        var lang = document.querySelector("[id*='lblLanguage']");
+        var res = document.querySelector("[id*='lblScreen']");
+
+        if (lang) {
+            lang.innerText = navigator.language;
+        }
+
+        if (res) {
+            res.innerText = window.screen.width + "x" + window.screen.height;
+        }
+
+    });
+</script>
+
+<asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+
+<div class="landing-navbar">
+    <div class="logo">Wi-Fi IDS</div>
+
+    <div class="menu">
+        <a href="Home.aspx">Home</a>
+        <a href="Userlogin.aspx#login-section">User</a>
+        <a href="Adminlogin.aspx#login-section">Admin</a>
+        <a href="About.aspx">About</a>
+    </div>
+</div>
+
+<div class="hero-container">
+
+<div class="hero-center">
+
+    <!-- ✅ DYNAMIC SYSTEM INFO -->
+    <div class="system-info">
+
+        <span><b>IP:</b> <asp:Label ID="lblIP" runat="server" /></span>
+
+        <span><b>Browser:</b> <asp:Label ID="lblBrowser" runat="server" /></span>
+
+        <span><b>OS:</b> <asp:Label ID="lblOS" runat="server" /></span>
+
+        <!-- ✅ FIXED -->
+        <span><b>Language:</b> 
+            <span id="lblLanguage" runat="server">Loading...</span>
+        </span>
+
+        <!-- ✅ FIXED -->
+        <span><b>Resolution:</b> 
+            <span id="lblScreen" runat="server">Loading...</span>
+        </span>
+
+        <span><b>Requests:</b> 
+            <asp:Label ID="lblRequests" runat="server" />
+        </span>
+
+    </div>
+
+    <h1>Wi-Fi Intrusion Detection & Cyber Attack Monitoring System</h1>
+
+    <p>
+        Monitor Wi-Fi connected devices and detect suspicious behaviour
+        such as brute-force login attempts, reconnaissance scanning,
+        and rapid request attacks.
+    </p>
+
+</div>
+
+<div class="hero-image-center">
+    <img src="images/network-security.jpg" />
+</div>
+
+</div>
+
+<div class="home-content">
+<form id="Form1" runat="server">
+<asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+</form>
+</div>
+
+</body>
+</html>

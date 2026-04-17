@@ -1,0 +1,103 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="User.master.cs" Inherits="User" %>
+
+<!DOCTYPE html>
+<html>
+<head id="Head1" runat="server">
+    <title>User Panel</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: #0b1a2f;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            width: 220px;
+            background-color: #020c1b;
+            height: 100vh;
+            padding-top: 20px;
+        }
+
+        .sidebar h2 {
+            color: #4fc3f7;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: #cfd8dc;
+            padding: 12px 20px;
+            text-decoration: none;
+        }
+
+        .sidebar a:hover {
+            background-color: #1e3a5f;
+            color: #fff;
+        }
+
+        /* Main area */
+        .main {
+            flex: 1;
+        }
+
+        /* Top bar */
+        .topbar {
+            background-color: #020c1b;
+            color: #4fc3f7;
+            padding: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Content */
+        .content {
+            padding: 30px;
+        }
+    </style>
+
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Wi-Fi IDS</h2>
+
+        <a href="UserHome.aspx">Dashboard</a>
+        <a href="user_search.aspx">View Files</a>
+        <a href="user_disease.aspx">Download</a>
+        <a href="Userlogin.aspx">Logout</a>
+    </div>
+
+    <!-- Main -->
+    <div class="main">
+
+        <!-- Topbar -->
+        <div class="topbar">
+            User Panel
+        </div>
+
+        <!-- Content -->
+        <div class="content">
+            <form id="Form1" runat="server">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </form>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
